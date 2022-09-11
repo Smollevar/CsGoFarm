@@ -1,27 +1,26 @@
 import java.awt.*;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.text.ParseException;
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
-import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
-// TODO Add txt file Farm in resources
-
-public class Contol {
+public class Control {
     public static void main(String [] args) {
         Map<Integer, Account> ordinalNumberAcc = new HashMap<>();
         getMap(ordinalNumberAcc);
-        
+
         for(Map.Entry<Integer, Account> entry : ordinalNumberAcc.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
             // TODO Check what was write inside this HashMap.
         }
         // TODO create function that launch sda application
-        // TODO create fun which get account from HashMap by key and get login and set it in 
+        // TODO create fun which get account from HashMap by key and get login and set it in
     }
 /*
 create four different methods that get String with different data handle info inside it
